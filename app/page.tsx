@@ -1,15 +1,21 @@
 "use client";
-import { FaHome } from "react-icons/fa";
-
-import Hero from "@/components/Hero";
-import { FloatingNav } from "@/components/ui/floating-navbar";
-import Grid from "@/components/Grid";
 import { navItems } from "@/data";
-import RecentProjects from "@/components/RecentProjects";
-import Clients from "@/components/Clients";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
-import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+const FloatingNav = dynamic(() => import("@/components/ui/floating-navbar").then((mod) => mod.FloatingNav || mod), {
+  ssr: false,
+});
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
+const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
+  ssr: false,
+});
+const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
+const Experience = dynamic(() => import("@/components/Experience"), {
+  ssr: false,
+});
+const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 const Home = () => {
   return (
