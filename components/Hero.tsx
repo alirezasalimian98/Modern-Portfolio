@@ -1,6 +1,5 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
 import Link from "next/link";
@@ -25,17 +24,17 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic web magic with next,js
+          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
+            Next-level development with Next.js craftsmanship
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Transforming concepts into seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi im Alireza a next js developer based in tehran
+            Hi im Alireza a front-end developer based in tehran
           </p>
-          <Link href={"#about"}>
+          <Link href={"#projects"}>
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

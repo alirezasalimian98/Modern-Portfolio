@@ -2,6 +2,7 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -16,13 +17,21 @@ const RecentProjects = () => {
             key={id}
             className="lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:h-[41rem] h-[32rem] sm:w-[570px] "
           >
-            <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] w-[80vw] overflow-hidden h-[30vh] mb-10  ">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src={"/bg.png"} alt="bg-img" />
+            <PinContainer title={title} href={link}>
+              <Link href={link} target="_blank">
+                <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] w-[80vw] overflow-hidden h-[30vh] mb-10  ">
+                  <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                    <img src={"/bg.png"} alt="bg-img" />
+                  </div>
+                  <img
+                    src={img}
+                    alt={title}
+                    className="z-10 absolute bottom-0 "
+                  />
+                  {/* transform rotate-[2.63deg] */}
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
-              </div>
+              </Link>
+
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
               </h1>

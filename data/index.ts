@@ -5,20 +5,28 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+// 1. "Crafting digital experiences with precision and creativity."
+// 2. "Empowering brands through cutting-edge front-end solutions."
+// 3. "Passionate about turning ideas into interactive realities."
+// 4. "Exploring the art of code and the science of design."
+// 5. "Driven by curiosity, inspired by innovation."
+// 6. "Building intuitive user experiences, one pixel at a time."
+// 7. "Where creativity meets functionality—my code tells the story."
+
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Passionate about turning ideas into interactive realities",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/hero-1.jpg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "A globe of endless possibilities—interactivity knows no borders",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +46,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Driven by curiosity, inspired by innovation",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +57,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Where creativity meets functionality—my code tells the story",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,11 +80,12 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "DevOverflow",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    // img: "/p1.svg",
+    img: "/Devflow.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://stack-overflow-app-vendettas-projects-17472a6f.vercel.app/",
   },
   {
     id: 2,
