@@ -8,8 +8,8 @@ const RecentProjects = () => {
   return (
     <div className="py-20 border-none" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+      Recent{" "}
+        <span className="text-purple"> project</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gsp-y-8 mt-10  ">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -26,7 +26,8 @@ const RecentProjects = () => {
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 absolute bottom-0 "
+                    className="z-10 absolute -bottom-10 transform rotate-[2.63deg] 
+                    w-[500px] h-[300px] max-sm:w-[380px] max-sm:h-[300px]"
                   />
                   {/* transform rotate-[2.63deg] */}
                 </div>
