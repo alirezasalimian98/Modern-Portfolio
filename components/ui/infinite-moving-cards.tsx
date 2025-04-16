@@ -11,9 +11,11 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
+    des: string;
     name: string;
-    title: string;
+    title?: string;
+    img: string;
+    imgClass?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -102,12 +104,16 @@ export const InfiniteMovingCards = ({
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="relative z-20 text-sm md:text-lg leading-[1.6] font-normal text-white dark:text-gray-100">
-                {item.quote}
+                {item.des}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <div className="me-3">
-                    <img src="/profile.svg" alt="profile" />
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className={`${item.imgClass} md:w-10 w-5`}
+                    />
                   </div>
                   <div className="flex flex-col gap-1 ">
                     <span className="text-xl leading-[1.6] font-bold text-neutral-500 dark:text-gray-400">
