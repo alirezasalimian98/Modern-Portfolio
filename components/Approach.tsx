@@ -8,20 +8,15 @@ const Approach = () => {
   return (
     <div className="w-full py-20">
       <h1 className="heading ">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple">strength</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          description="Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later"
+          title="Problem-Solving"
+          icon={<AceternityIcon order="Solutioning" />}
+          description="Demonstrates exceptional ability to dissect complex problems and devise effective solutions. 
+          Excels at identifying root causes through careful analysis, brainstorming creative approaches, 
+          and implementing efficient strategies that improve outcomes. "
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -29,16 +24,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Nisha is Munni"
-          icon={<AceternityIcon order="Phase 2" />}
-          description="Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later"
+          title="Teamwork and Collaboration"
+          icon={<AceternityIcon order="Team" />}
+          description="Highly adept at working in team settings, building strong relationships with colleagues, 
+          and promoting a cooperative environment. Communicates effectively with diverse team members, fostering mutual 
+          understanding and ensuring alignment on project goals."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -51,16 +41,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          description="Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later
-          Canvas description that will be change later"
-          title="Munni is Aditi"
-          icon={<AceternityIcon order="Phase 3" />}
+          title="Attention to Detail"
+          description="Combines a meticulous mindset with technical expertise to ensure accuracy and quality in all 
+          tasks. Focused on detecting errors early, maintaining high coding standards, and optimizing workflows to deliver reliable outcomes."
+          icon={<AceternityIcon order="Precision" />}
         >
           <CanvasRevealEffect
             animationSpeed={3}

@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
+import CvButton from "./ui/CvButton";
 
 const Hero = () => {
   return (
@@ -34,13 +35,27 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi im Alireza a front-end developer based in tehran
           </p>
-          <Link href={"#projects"}>
-            <MagicButton
+          <div className="flex justify-center items-center gap-3">
+            <Link href={"#projects"}>
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </Link>
+            <Link href={"#projects"}>
+              {/* <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
-            />
-          </Link>
+            /> */}
+              <CvButton
+                title="Download cv"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
