@@ -240,45 +240,34 @@ export const workExperience = [
     desc: "Front-end developer for 'AIBox' and 'Roobin' projects, utilizing Next.js and MUI to create seamless user experiences.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
-    // https://nextaibox.com/
+    url: "https://nextra.io/",
   },
   {
     id: 2,
     title: "Front-end developer , samina accounting app",
     desc: "Utilized React and TypeScript to modernize the user interface while seamlessly integrating backend APIs. Focused on improving functionality, ensuring accuracy in computations.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-    // https://saminasoft.ir/fa 
+    url: "https://saminasoft.ir/fa",
   },
   {
     id: 3,
     title: "Self-employed developer",
     desc: "Experienced self-employed developer with a strong background in creating, optimizing, and maintaining software solutions tailored to client needs.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
-  // {
-  //   id: 4,
-  //   title: "Lead Frontend Developer",
-  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
-  //   className: "md:col-span-2",
-  //   thumbnail: "/exp4.svg",
-  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    // https://github.com/alirezasalimian98
+    url: "https://github.com/alirezasalimian98",
   },
   {
     id: 2,
     img: "/link.svg",
-    // https://www.linkedin.com/in/alireza-salimian-3311592a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+    url: "https://www.linkedin.com/in/alireza-salimian-3311592a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
-  // {
-  //   id: 3,
-  //   img: "/link.svg",
-  // },
 ];

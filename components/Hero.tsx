@@ -5,6 +5,7 @@ import MagicButton from "./ui/MagicButton";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 import CvButton from "./ui/CvButton";
+import { VscVerifiedFilled } from "react-icons/vsc";
 
 const Hero = () => {
   return (
@@ -51,8 +52,9 @@ const Hero = () => {
             /> */}
               <CvButton
                 title="Download cv"
-                icon={<FaLocationArrow />}
+                icon={<VscVerifiedFilled className="w-6 h-6" />}
                 position="right"
+                href="/pdf/Alireza_Salimiyan_resume.pdf"
               />
             </Link>
           </div>

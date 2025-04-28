@@ -10,11 +10,11 @@ const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
 const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
   ssr: false,
 });
-const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
+const Clients = dynamic(() => import("@/components/KnowledgeAndAbilities"), { ssr: false });
 const Experience = dynamic(() => import("@/components/Experience"), {
   ssr: false,
 });
-const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
+const Approach = dynamic(() => import("@/components/strength"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 const Home = () => {

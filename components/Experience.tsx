@@ -1,6 +1,8 @@
 import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/moving-border";
+import Image from "next/image";
+import Link from "next/link";
 
 const Experience = () => {
   return (
@@ -18,18 +20,29 @@ const Experience = () => {
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
+              <Image
                 src={card.thumbnail}
+                width={64}
+                height={64}
                 alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
+                className="lg:w-32 md:w-20"
               />
-              <div className="lg:ms-5 ">
+              <div className="lg:ms-5 flex flex-col">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>
+                {card.url && (
+                  <Link
+                    className="text-start text-purple mt-3 font-semibold absolute bottom-5 right-10 hover:text-rose-400 transform hover:-translate-y-1 transition duration-400"
+                    href={card.url!}
+                    target="_blank"
+                  >
+                    Visit website !
+                  </Link>
+                )}
               </div>
             </div>
           </Button>

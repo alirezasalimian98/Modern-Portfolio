@@ -4,7 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
-const Approach = () => {
+const Strength = () => {
   return (
     <div className="w-full py-20">
       <h1 className="heading ">
@@ -158,4 +158,4 @@ export const Icon = ({ className, ...rest }: any) => {
   );
 };
 
-export default Approach;
+export default Strength;
