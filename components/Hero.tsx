@@ -54,7 +54,7 @@ const Hero = () => {
                 title="Download cv"
                 icon={<VscVerifiedFilled className="w-6 h-6" />}
                 position="right"
-                href="/pdf/Alireza_Salimiyan_resume.pdf"
+                href="/pdf/Alireza-Salimiyan-2.0.1.pdf"
               />
             </Link>
           </div>
